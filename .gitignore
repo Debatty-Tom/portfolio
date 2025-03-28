@@ -8,3 +8,5 @@ wp-content/themes!/*
 !wp-content/themes/portfolio/*
 !wp-content/themes/portfolio/*/*
 
+wp-content/themes/portfolio/.DS_Store
+wp-content/themes/portfolio/resources/.DS_Store
