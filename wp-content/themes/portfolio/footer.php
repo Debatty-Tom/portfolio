@@ -1,10 +1,7 @@
 </main>
 <footer>
-    <?php wp_nav_menu([
-        'theme_location' => 'footer',
-        'container' => 'nav',
-    ]); ?>
-    <p>© <?= get_bloginfo('name'); ?></p>
+    <p>© 2024 <?= get_bloginfo('name'); ?> - Tous droits réservés.</p>
+    <a href="">Mentions légales</a>
 </footer>
 </body>
 </html>
