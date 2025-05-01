@@ -33,3 +33,19 @@ function create_language_taxonomy()
     ]);
 }
 add_action('init', 'create_language_taxonomy');
+
+function create_contact_form()
+{
+    register_post_type('contact_message', [
+        'label' => 'Messages de contact',
+        'description' => 'Les envois de formulaire via la page de contact',
+        'menu_position' => 10,
+        'menu_icon' => 'dashicons-email',
+        'public' => false,
+        'show_ui' => true,
+        'has_archive' => false,
+        'supports' => ['title', 'editor'],
+    ]);
+}
+
+add_action('init', 'create_contact_form');

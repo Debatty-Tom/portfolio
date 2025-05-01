@@ -13,7 +13,7 @@ function dw_get_navigation_links(string $location): array
     // Récupérer l'objet WP pour le menu à la location $location
     $locations = get_nav_menu_locations();
 
-    if(! isset($locations[$location])) {
+    if (!isset($locations[$location])) {
         return [];
     }
 
@@ -34,6 +34,5 @@ function dw_get_navigation_links(string $location): array
     }
 
     // Retourner ce tableau d'objets (liens).
-
     return $links;
 }
