@@ -8,8 +8,9 @@
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
 if(have_posts()): while(have_posts()): the_post(); ?>
-
-    <div><?= get_the_content(); ?></div>
+    <?php include('templates/content/flexible.php') ?>
+    <?php get_template_part('parts/section', 'skills-svg-used'); ?>
+    <?php get_template_part('parts/section', 'key-points'); ?>
 
 <?php
     // On ferme "la boucle" (The Loop):
