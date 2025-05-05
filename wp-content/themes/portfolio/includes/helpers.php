@@ -15,12 +15,12 @@ function dw_asset(string $file): string
     if (file_exists($manifestPath)) {
         $manifest = json_decode(file_get_contents($manifestPath), true);
 
-        if (isset($manifest['wp-content/themes/dw/resources/js/main.js']) && $file === 'js') {
-            return get_theme_file_uri('public/' . $manifest['wp-content/themes/dw/resources/js/main.js']['file']);
+        if (isset($manifest['wp-content/themes/portfolio/resources/js/main.js']) && $file === 'js') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio/resources/js/main.js']['file']);
         }
 
-        if (isset($manifest['wp-content/themes/dw/resources/css/styles.scss']) && $file === 'css') {
-            return get_theme_file_uri('public/' . $manifest['wp-content/themes/dw/resources/css/styles.scss']['file']);
+        if (isset($manifest['wp-content/themes/portfolio/resources/scss/main.scss']) && $file === 'css') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/portfolio/resources/scss/main.scss']['file']);
         }
     }
 
