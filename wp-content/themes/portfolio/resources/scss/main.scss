@@ -1,0 +1,14 @@
+@use 'utils/reset';
+@use 'utils/helper';
+
+@use 'settings/breakpoints';
+@use 'settings/colors';
+@use 'settings/var';
+@use 'settings/font-sizes';
+
+@use 'general/footer';
+@use 'general/header';
+@use 'general/general';
+// @use 'general/naviguation';
+
+@use 'content/project';
