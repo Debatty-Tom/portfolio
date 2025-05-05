@@ -1,0 +1,25 @@
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-size;
+
+.footer {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+  font-size: font-size.$small-text-size;
+  padding-bottom: 0.5em;
+
+  &__link{
+    color: color.$text-color-primary;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: color.$text-color-secondary;
+      text-decoration: underline;
+    }
+  }
+}
