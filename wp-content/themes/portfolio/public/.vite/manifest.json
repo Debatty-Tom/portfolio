@@ -1,0 +1,33 @@
+{
+  "wp-content/themes/portfolio/resources/img/blobs/blob1.svg": {
+    "file": "assets/blob1-CUp2e52F.svg",
+    "src": "wp-content/themes/portfolio/resources/img/blobs/blob1.svg"
+  },
+  "wp-content/themes/portfolio/resources/img/blobs/blob2.svg": {
+    "file": "assets/blob2-Chpz5J5T.svg",
+    "src": "wp-content/themes/portfolio/resources/img/blobs/blob2.svg"
+  },
+  "wp-content/themes/portfolio/resources/img/blobs/blob3.svg": {
+    "file": "assets/blob3-qcfaIkYU.svg",
+    "src": "wp-content/themes/portfolio/resources/img/blobs/blob3.svg"
+  },
+  "wp-content/themes/portfolio/resources/img/blobs/blob4.svg": {
+    "file": "assets/blob4-eUGbKpyZ.svg",
+    "src": "wp-content/themes/portfolio/resources/img/blobs/blob4.svg"
+  },
+  "wp-content/themes/portfolio/resources/img/blobs/blob5.svg": {
+    "file": "assets/blob5-BdIzUuaM.svg",
+    "src": "wp-content/themes/portfolio/resources/img/blobs/blob5.svg"
+  },
+  "wp-content/themes/portfolio/resources/js/main.js": {
+    "file": "assets/js-l0sNRNKZ.js",
+    "name": "js",
+    "src": "wp-content/themes/portfolio/resources/js/main.js",
+    "isEntry": true
+  },
+  "wp-content/themes/portfolio/resources/scss/main.scss": {
+    "file": "assets/css-DKqpHf7V.css",
+    "src": "wp-content/themes/portfolio/resources/scss/main.scss",
+    "isEntry": true
+  }
+}
