@@ -12,3 +12,5 @@ wp-content/themes!/*
 
 wp-content/themes/portfolio/.DS_Store
 wp-content/themes/portfolio/resources/.DS_Store
+wp-content/themes/portfolio/resources/fonts/Urbanist/.DS_Store
+wp-content/themes/portfolio/resources/fonts/Lora/.DS_Store
