@@ -1,0 +1,160 @@
+@use '../settings/breakpoints' as breakpoint;
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-size;
+
+
+.contact {
+  padding-top: 4em;
+  padding-bottom: 80px;
+  margin: auto;
+}
+
+.info {
+  &__title {
+    font-size: 1.1em;
+    margin-bottom: .5em;
+  }
+
+  &__content {
+    margin-bottom: 1.5em;
+
+    & > a {
+      color: color.$text-color-primary;
+      text-underline-offset: 3px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.cordcontact {
+  margin-bottom: 5em;
+
+  &__content {
+    margin-bottom: 1.5em;
+  }
+
+  &__title {
+    font-size: font-size.$main-text-title-size;
+    margin-bottom: 1em;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+
+  &__fields {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.field {
+  &__input {
+    border: 1px solid color.$text-color-primary;
+    padding: 14px 10px;
+    margin-bottom: 15px;
+    border-radius: 0.8em;
+  }
+
+  &__textarea {
+    border: 1px solid color.$text-color-primary;
+    padding: 14px 10px;
+    margin-bottom: 15px;
+    border-radius: 0.8em;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__label {
+    padding-bottom: 5px;
+  }
+
+  &__submit {
+    align-self: flex-start;
+    font-size: inherit;
+    justify-self: flex-start;
+  }
+
+  &__valid {
+    grid-column: span 2;
+    color: green;
+  }
+
+  &__error {
+    margin-bottom: 1.5em;
+    -webkit-text-fill-color: color.$red;
+    opacity: 1;
+    color: color.$red;
+
+    &:before {
+      content: '\ea08 ';
+      color: color.$red;
+      margin-right: 0.5em;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+    }
+  }
+
+  &__required {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5em;
+    text-align: right;
+  }
+
+  &__text {
+    &--red {
+      color: color.$red;
+    }
+  }
+}
+
+label[data-type="required"] {
+  &:after {
+    content: ' *';
+    color: color.$red;
+  }
+}
+
+@include breakpoint.tablet-up {
+  .contact {
+    padding-top: 7em;
+    padding-bottom: 8em;
+  }
+  .form {
+    &__fields {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2em;
+    }
+  }
+  .field {
+    &__container {
+      &--full {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+
+@include breakpoint.desktop-up {
+  .contact {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 8em;
+    max-width: 1500px;
+  }
+}
