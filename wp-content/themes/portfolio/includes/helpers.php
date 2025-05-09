@@ -42,3 +42,15 @@ add_filter('upload_mimes', 'my_own_mime_types');
 
 // Activer l'utilisation des vignettes (image de couverture) sur nos post types:
 add_theme_support('post-thumbnails', ['project']);
+
+
+function dw_get_page_title(): string
+{
+    if (is_front_page()) {
+        $pageTitle = 'Développeur full stack';
+    } else {
+        $pageTitle = get_the_title();
+    }
+
+    return $pageTitle;
+}
