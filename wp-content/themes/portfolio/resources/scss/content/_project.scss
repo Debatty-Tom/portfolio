@@ -4,8 +4,8 @@
   position: relative;
   overflow: hidden;
 
-  -webkit-mask-size: 150% 150%;
-  mask-size: 150% 150%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -35,8 +35,6 @@
   }
 
   &:hover {
-    -webkit-mask-size: 200% 200%;
-    mask-size: 200% 200%;
 
     .project__figure__img {
       filter: blur(8px) brightness(0.5);

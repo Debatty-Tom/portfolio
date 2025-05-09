@@ -25,6 +25,10 @@ $widescreen: 1920px;
   @media (min-width: #{$desktop}) { @content; }
 }
 
+@mixin desktop-xl-up {
+  @media (min-width: #{$desktop-xl}) { @content; }
+}
+
 @mixin widescreen {
   @media (min-width: #{$widescreen}) { @content; }
 }

@@ -1,14 +1,18 @@
 @use 'utils/reset';
 @use 'utils/helper';
+@use 'utils/burger';
+@use 'utils/normalize';
 
 @use 'settings/breakpoints';
 @use 'settings/colors';
 @use 'settings/var';
 @use 'settings/font-sizes';
+@use 'settings/fonts';
 
 @use 'general/footer';
 @use 'general/header';
 @use 'general/general';
-// @use 'general/naviguation';
+@use 'general/naviguation';
 
 @use 'content/project';
+@use 'content/contact';

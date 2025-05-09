@@ -1,0 +1,29 @@
+@use '../settings/breakpoints' as breakpoint;
+
+html, html * {
+  box-sizing: border-box;
+}
+
+section, .header, .footer__container {
+  width: 100%;
+  padding: 0 24px;
+}
+
+a {
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+}
+
+@include breakpoint.desktop-xl-up {
+  section, .header, .footer__container {
+    max-width: 1500px;
+    margin: auto;
+  }
+
+  section {
+    padding: 5em 24px;
+  }
+}

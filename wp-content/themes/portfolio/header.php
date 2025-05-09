@@ -9,22 +9,29 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<header class="header">
-    <h1 class="header__title"><?= get_bloginfo('name') ?></h1>
-    <p class="page__title"><?= get_the_title() ?></p>
-    <nav class="header__nav">
-        <h2 class="sro"><?= __hepl('Navigation pricinpale') ?></h2>
-        <ul class="header__nav__container">
-            <li>
-                <ul class="header__nav__list header__nav__list--projects">
+<header class="header" role="banner">
+    <a class="header__title" href="<?= home_url() ?>" title="Vers la page d'accueil"><?= get_bloginfo('name') ?></a>
+    <h1 class="page__title"><?= dw_get_page_title() ?></h1>
+    <nav class="nav">
+        <h2 class="sro"><?= __hepl('Navigation principale') ?></h2>
+        <label class="sro" for="burger">Burger menu</label>
+        <input type="checkbox" name="burger" id="burger">
+        <div class="burger__wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav__container">
+            <li class="nav__sublist__container--projects">
+                <ul class="nav__list nav__list--projects">
                     <?php
                     $projectIndex = 0;
                     foreach (dw_get_navigation_links('header') as $link):
                         if (str_contains($link->href, 'projets')):
                             $projectIndex++;
                             ?>
-                            <li class="header__nav__item header__nav__item--project header__nav__item--project--<?= $projectIndex ?>">
-                                <a href="<?= $link->href; ?>" class="header__nav__link">
+                            <li class="nav__item nav__item--project nav__item--project--<?= $projectIndex ?>">
+                                <a href="<?= $link->href; ?>" class="nav__link">
                                     <?php
                                     $post_id = url_to_postid($link->href);
                                     if ($post_id && get_post_type($post_id) === 'project'): ?>
@@ -39,28 +46,27 @@
                     endforeach; ?>
                 </ul>
             </li>
-            <li>
-                <ul class="header__nav__list header__nav__list--links">
+            <li class="nav__sublist__container">
+                <ul class="nav__list nav__list--links">
                     <?php
                     $linkIndex = 0;
                     foreach (dw_get_navigation_links('header') as $link):
                         if (!str_contains($link->href, 'projets')):
                             ?>
-                            <li class="header__nav__item header__nav__item--link">
-                                <a href="<?= $link->href; ?>" class="header__nav__link"><?= $link->label; ?></a>
+                            <li class="nav__item nav__item--link">
+                                <a href="<?= $link->href; ?>" class="nav__link"><?= $link->label; ?></a>
                             </li>
                         <?php endif;
                     endforeach; ?>
                     <?php foreach (pll_the_languages(['raw' => true]) as $lang): ?>
                         <li class="languages__item<?= $lang['current_lang'] ? ' languages__item--current' : '' ?>">
                             <a href="<?= $lang['url'] ?>" lang="<?= $lang['locale'] ?>" hreflang="<?= $lang['locale'] ?>"
-                               class="header__nav__link"><?= $lang['locale'] ?></a>
+                               class="nav__link"><?= $lang['locale'] ?></a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
             </li>
         </ul>
-
     </nav>
 </header>
 <main>
