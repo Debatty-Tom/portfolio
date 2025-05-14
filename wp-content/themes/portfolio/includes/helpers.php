@@ -37,6 +37,7 @@ function my_own_mime_types($mimes)
     // Retourne le tableau des types MIME mis à jour
     return $mimes;
 }
+
 // Ajoute notre fonction de filtrage à l'action 'upload_mimes' pour permettre l'upload des fichiers SVG.
 add_filter('upload_mimes', 'my_own_mime_types');
 
@@ -53,4 +54,22 @@ function dw_get_page_title(): string
     }
 
     return $pageTitle;
+}
+
+function is_project_page()
+{
+    return str_contains($_SERVER['REQUEST_URI'], __hepl('projets'));
+}
+
+function dw_url_to_page_title($link): string
+{
+    if ($link) {
+        $post_id = url_to_postid($link);
+        if ($post_id) {
+            return get_the_title($post_id);
+        } else {
+            return 'Il n’y pas de page pour ce lien';
+        }
+    }
+    return 'Il n’y pas de lien';
 }
