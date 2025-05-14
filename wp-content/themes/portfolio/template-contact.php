@@ -4,13 +4,13 @@
     <section class="contact">
         <h2 class="sro"><?= __hepl('Formulaire de contact') ?></h2>
         <article class="cordcontact">
-            <h2 class="cordcontact__title"><?= __hepl('Mes informations de contact')?></h2>
+            <h2 class="cordcontact__title section__title"><?= __hepl('Mes informations de contact')?></h2>
             <div class="cordcontact__content"><?= get_field('contact_text') ?></div>
             <dl class="cordcontact__container info">
                 <dt class="info__title"><?= __hepl('Email')?></dt>
                 <?php
                 $email = get_option('options_email');
-                $phone = get_site_option('options_phone');
+                $phone = get_option('options_phone');
                 ?>
                 <dd class="info__content"><a
                             href="<?= "mailto:" . $email ?>"><?= $email ?></a></dd>
