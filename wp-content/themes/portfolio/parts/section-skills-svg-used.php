@@ -1,7 +1,7 @@
-<section>
-    <h2><?= esc_html__('Mes compétences', 'text-domain') ?></h2>
+<section class="skills-wall-section">
+    <h2 class="section__title"><?= __hepl('Mes compétences') ?></h2>
     <?php if (have_rows('logos_repeater')): ?>
-        <ul>
+        <ul class="skills-wall">
             <?php while (have_rows('logos_repeater')): the_row();
                 $selected_svg = get_sub_field('logo_select');
 
@@ -21,11 +21,8 @@
                     $svg_label = 'Inconnu';
                 }
                 ?>
-                <li>
-                    <div class="svg-container">
-                        <title>
-                            <?= 'Il s’agit du logo de '.$svg_label ?>
-                        </title>
+                <li class="skills-wall__item">
+                    <div class="svg-container" title="<?= 'Il s’agit du logo de '.$svg_label ?>">
                         <desc>
                             <?php get_field('logo_description'); ?>
                         </desc>

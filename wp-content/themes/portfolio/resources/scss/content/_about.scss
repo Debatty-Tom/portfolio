@@ -1,0 +1,112 @@
+@use '../settings/breakpoints' as breakpoint;
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-size;
+
+// sans js
+.no-js .skills-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.no-js .skills-wall__item {
+  position: static;
+  width: 90px;
+  height: 90px;
+}
+
+// avec js
+.skills-wall {
+  position: relative;
+  min-height: 700px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-wall__item {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  transition: transform 0.3s ease;
+}
+
+.skills-wall__item:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-container svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.key-points__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.key-point {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+
+  &__label {
+    font-size: font-size.$main-text-title-size;
+    margin-bottom: 1rem;
+  }
+    &__content {
+        font-size: font-size.$small-text-size;
+    }
+}
+
+@include breakpoint.tablet{
+  .key-points__container{
+    flex-wrap: wrap;
+  }
+    .key-point {
+        width: 80%;
+    }
+}
+
+@include breakpoint.tablet-up {
+  .key-points__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .key-point{
+    width: 45%;
+    text-align: start;
+
+    &:nth-of-type(3){
+      width: 60%;
+    }
+
+    &__content {
+      font-size: font-size.$main-labor-text-size;
+    }
+  }
+}
+@include breakpoint.desktop-up {
+  .key-points__container{
+    flex-wrap: nowrap;
+  }
+  .key-point {
+    width: 100%;
+
+    &:nth-of-type(3){
+      width: 100%;
+    }
+  }
+}

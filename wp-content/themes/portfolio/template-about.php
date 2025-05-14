@@ -1,9 +1,6 @@
 <?php /* Template Name: Page "À propos" */ ?>
 
 <?php get_header(); ?>
-<aside>
-    <h2><?= __hepl('À propos de moi') ?></h2>
-</aside>
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
