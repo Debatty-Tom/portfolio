@@ -1,4 +1,6 @@
 @use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-size;
+@use '../settings/breakpoints' as breakpoints;
 
 
 body {
@@ -6,10 +8,22 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: color.$background-color;
-
 }
 
 header {
   flex: 1;
   min-height: 97.5vh;
+}
+
+.section__title {
+  font-size: font-size.$main-text-title-size;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+@include breakpoints.tablet-up {
+  .section__title {
+    font-weight: normal;
+    font-size: font-size.$section-title-size;
+  }
 }
