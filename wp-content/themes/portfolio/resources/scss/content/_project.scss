@@ -3,7 +3,7 @@
 
 .project__figure {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
 
   -webkit-mask-size: contain;
   mask-size: contain;
@@ -13,10 +13,12 @@
   mask-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
 
+  pointer-events: auto;
+
   .project__figure__img {
     width: 100%;
     height: auto;
-    transition: filter 0.4s ease;
+    transition: filter 0.7s ease;
     display: block;
   }
 
@@ -33,9 +35,13 @@
     text-align: center;
     pointer-events: none;
     z-index: 2;
+    max-width: 40%;
   }
 
   &:hover {
+    -webkit-mask-image: none;
+    mask-image: none;
+    pointer-events: auto;
 
     .project__figure__img {
       filter: blur(8px) brightness(0.5);

@@ -3,9 +3,7 @@
 // Paramétrer des tailles d'images pour le générateur de thumbnails de Wordpress :
 
 // Sans recadrage :
-add_image_size('travel-side', 420, 420);
-// Avec recadrage :
-add_image_size('travel-header', 1920, 400, true);
+add_image_size('naviguation', 420, 420);
 
 // 1. Charger un fichier "public" (asset/image/css/script/...) pour le front-end sans que cela ne s'applique à l'admin.
 function dw_asset(string $file): string

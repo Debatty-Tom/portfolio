@@ -31,12 +31,12 @@
                             $projectIndex++;
                             ?>
                             <li class="nav__item nav__item--project nav__item--project--<?= $projectIndex ?>">
-                                <a href="<?= $link->href; ?>" class="nav__link">
+                                <a href="<?= $link->href; ?>" class="nav__link" title="<?= __('lien vers le projet nommé ' . $link->label) ?>">
                                     <?php
                                     $post_id = url_to_postid($link->href);
                                     if ($post_id && get_post_type($post_id) === 'project'): ?>
                                         <figure class="project__figure">
-                                            <?= get_the_post_thumbnail($post_id, 'medium', ['class' => 'project__figure__img']) ?>
+                                            <?= get_the_post_thumbnail($post_id, 'naviguation', ['class' => 'project__figure__img']) ?>
                                             <figcaption class="project__label"><?= $link->label; ?></figcaption>
                                         </figure>
                                     <?php endif; ?>
