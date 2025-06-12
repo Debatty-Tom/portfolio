@@ -71,3 +71,47 @@ function dw_url_to_page_title($link): string
     }
     return 'Il n’y pas de lien';
 }
+function dw_get_section_id(string $headline): string
+{
+    if (str_contains($headline, __hepl('bénévole'))) {
+        return 'benevolat';
+    } else if(str_contains($headline, __hepl('financier'))) {
+        return 'financial';
+    } else if (str_contains($headline, __hepl('matériel'))) {
+        return 'material';
+    } else {
+        return '';
+    }
+}
+function dwGenerateUniqueGridPositions($count, $maxCols = 30, $maxRows = 15)
+{
+    $used = [];
+    $positions = [];
+
+    while (count($positions) < $count) {
+        $x = rand(1, $maxCols - 1);
+        $y = rand(1, $maxRows - 1);
+
+        $isFree = true;
+        for ($dx = 0; $dx < 2; $dx++) {
+            for ($dy = 0; $dy < 2; $dy++) {
+                if (isset($used[($x + $dx) . '-' . ($y + $dy)])) {
+                    $isFree = false;
+                    break 2;
+                }
+            }
+        }
+
+        if ($isFree) {
+            for ($dx = 0; $dx < 2; $dx++) {
+                for ($dy = 0; $dy < 2; $dy++) {
+                    $used[($x + $dx) . '-' . ($y + $dy)] = true;
+                }
+            }
+
+            $positions[] = "pos-{$x}-{$y}";
+        }
+    }
+
+    return $positions;
+}
