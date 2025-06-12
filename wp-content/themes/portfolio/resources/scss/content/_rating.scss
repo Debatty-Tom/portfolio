@@ -1,0 +1,84 @@
+.skills-wall__item {
+  position: relative;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  &:focus-within {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+.skill_item{
+  &:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  &:focus-within {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+.svg-container {
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+  }
+}
+
+.skills__rating {
+  width: 150px;
+  height: 30px;
+  display: block;
+  position: relative;
+  background: url(/wp-content/themes/portfolio/resources/img/rating/empty_star.svg) repeat-x 0 0;
+  z-index: 1;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: url(/wp-content/themes/portfolio/resources/img/rating/full_star.svg) repeat-x 0 0;
+  }
+
+  &[data-score="1"]::after {
+    width: 30px;
+  }
+
+  &[data-score="2"]::after {
+    width: 60px;
+  }
+
+  &[data-score="3"]::after {
+    width: 90px;
+  }
+
+  &[data-score="4"]::after {
+    width: 120px;
+  }
+
+  &[data-score="5"]::after {
+    width: 100%;
+  }
+
+}
+
+.skills-wall__item:hover .skills__rating,
+.skills-wall__item:focus-within .skills__rating {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}

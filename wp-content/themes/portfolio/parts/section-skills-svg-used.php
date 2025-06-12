@@ -27,13 +27,13 @@
                 ?>
                 <li class="skills-wall__item <?= $positions[$index++] ?>">
                     <div class="svg-container" title="<?= 'Il s’agit du logo de ' . $svg_label ?>">
-                        <desc>
-                            <?php get_field('logo_description'); ?>
+                        <desc class="sro">
+                            <?php the_sub_field('logo_description'); ?>
                         </desc>
-                        <figure>
+                        <figure class="logo__figure">
                             <?php echo $svg_content; ?>
-                            <figcaption>
-
+                            <figcaption class="skills__rating" data-score="<?= $rating = get_sub_field('rating'); ?>">
+                                <p class="sro">Cette compétence est maitrisée à <?= $rating; ?> étoiles sur 5</p>
                             </figcaption>
                         </figure>
                     </div>
