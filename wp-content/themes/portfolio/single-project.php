@@ -28,7 +28,7 @@ else: ?>
                     <div class="project__card">
                         <h3 class="project__title"><?= get_the_title(); ?></h3>
                         <figure class="project__related__figure">
-                            <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'recipe__img']); ?>
+                            <?= get_the_post_thumbnail(size: 'related', attr: ['class' => 'recipe__img']); ?>
                         </figure>
                     </div>
                 </article>

@@ -40,9 +40,22 @@
     font-weight: bold;
   }
 
-  &__content{
+  &__content > a{
     text-decoration: none;
-    color: color.color.$text-color-primary;
+    color: color.$text-color-primary;
+
+    &::before {
+      background-color: color.$text-color-nav;
+    }
+
+    &:hover::before {
+      color: color.$text-color-nav-hover;
+      background-color: color.$text-color-nav-hover;
+    }
+
+    &:hover {
+      color: color.$text-color-nav-hover;
+    }
   }
 }
 

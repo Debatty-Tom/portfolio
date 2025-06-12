@@ -14,9 +14,12 @@
 @use 'general/general';
 @use 'general/naviguation';
 @use 'general/expore-more';
+@use 'general/wysiwyg';
 
 @use 'content/project';
 @use 'content/contact';
 @use 'content/about';
+@use 'content/not-found';
+@use 'content/rating';
 
 @use 'partials/text-media';

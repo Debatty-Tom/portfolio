@@ -12,10 +12,10 @@
                 $email = get_option('options_email');
                 $phone = get_option('options_phone');
                 ?>
-                <dd class="info__content"><a
-                            href="<?= "mailto:" . $email ?>"><?= $email ?></a></dd>
+                <dd class="info__content underline"><a
+                            href="<?= "mailto:" . $email ?>" class="underline"><?= $email ?></a></dd>
                 <dt class="info__title"><?= __hepl('Téléphone') ?></dt>
-                <dd class="info__content"><a href="<?= "tel:" . $phone ?>"><?= $phone ?></a>
+                <dd class="info__content"><a href="<?= "tel:" . $phone ?>" class="underline"><?= $phone ?></a>
                 </dd>
             </dl>
         </article>
