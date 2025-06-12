@@ -4,25 +4,26 @@
 
 .nav {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding-bottom: 20px;
   position: relative;
+  overflow: hidden;
 
   &__container {
     z-index: 3;
-    position: relative;
+    position: fixed;
     background-color: color.$background-color;
     transform: translateX(100%);
     transition: transform .3s ease;
-    min-height: 95vh;
+    min-height: 100vh;
     right: 0;
     top: 0;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 6rem;
   }
 
   &__link {
@@ -34,71 +35,24 @@
     flex-direction: column;
     padding: 20px;
     font-size: font-size.$main-text-title-size;
+    width: fit-content;
+
+    &::before {
+      background-color: color.$text-color-nav;
+    }
+
+    &:hover::before {
+      color: color.$text-color-nav-hover;
+      background-color: color.$text-color-nav-hover;
+    }
 
     &:hover {
-      color: color.$text-color-primary;
-      transform: scale(1.1);
-    }
-
-    &:after {
-      content: '';
-      width: 0;
-      height: 1px;
-      background-color: color.$text-color-primary;
-      transition: .3s ease-in;
-    }
-
-    &:hover:after,
-    &:focus:after {
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: color.$text-color-primary;
-      transition: .3s ease-out;
+      color: color.$text-color-nav-hover;
     }
   }
 
   &__language {
     text-transform: uppercase;
-  }
-
-  &__item {
-    &--project {
-      &--1 {
-        figure {
-          -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob1.svg');
-          mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob1.svg');
-        }
-      }
-
-      &--2 {
-        figure {
-          -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob2.svg');
-          mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob2.svg');
-        }
-      }
-
-      &--3 {
-        figure {
-          -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob3.svg');
-          mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob3.svg');
-        }
-      }
-
-      &--4 {
-        figure {
-          -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob4.svg');
-          mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob4.svg');
-        }
-      }
-
-      &--5 {
-        figure {
-          -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob5.svg');
-          mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob5.svg');
-        }
-      }
-    }
   }
 
   &__list {
@@ -107,117 +61,33 @@
     justify-content: space-between;
     flex-direction: row;
   }
-
-  &__sublist__container {
-    width: 100%;
-    position: absolute;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .nav {
-    padding-bottom: 1.5em;
-
-    &__container {
-      transform: none;
-      position: absolute;
-      flex-direction: row;
-      width: 100%;
-      min-height: auto;
-    }
-
-    &__link {
-      font-size: 1em;
-      padding: 15px 20px;
-    }
-
-    &__items:last-child > a {
-      padding-right: 0;
-    }
-  }
 }
 
 @include breakpoint.desktop-xl-up {
   .nav {
     position: absolute;
     display: flex;
+    flex-direction: column;
     flex: 1;
     inset: 0;
     width: 100%;
-    height: 100%;
     padding-bottom: 1.5em;
     z-index: 0;
+    margin-top: 2rem;
 
     &__container {
       transform: none;
       position: relative;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: flex-end;
       width: 100%;
-      height: 100%;
+      min-height: auto;
+      padding: 0;
     }
 
     &__item {
       position: relative;
-
-      &--project {
-        position: absolute;
-
-        &--1 {
-          top: 1%;
-          left: 35%;
-
-          figure {
-            -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob1.svg');
-            mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob1.svg');
-
-          }
-        }
-
-        &--2 {
-          top: 7.5%;
-          right: 5%;
-
-          figure {
-            -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob2.svg');
-            mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob2.svg');
-          }
-        }
-
-        &--3 {
-          top: 45%;
-          left: 67.5%;
-
-          figure {
-            -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob3.svg');
-            mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob3.svg');
-          }
-        }
-
-        &--4 {
-          bottom: 12.5%;
-          left: 30%;
-
-          figure {
-            -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob4.svg');
-            mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob4.svg');
-          }
-        }
-
-        &--5 {
-          bottom: 27.5%;
-          left: 1%;
-
-          figure {
-            -webkit-mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob5.svg');
-            mask-image: url('/wp-content/themes/portfolio/resources/img/blobs/blob5.svg');
-
-            & > figcaption.project__label{
-              left: 45%;
-            }
-          }
-        }
-      }
+      width: 100%;
     }
 
     &__list {
@@ -235,15 +105,19 @@
     }
 
     &__sublist__container {
-      width: 100%;
-      position: relative;
-      bottom: 0;
+      position: absolute;
 
-      &--projects {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+
+      border: 0;
+
+      color: white;
+
+      overflow: hidden;
+      clip: rect(0 0 0 0);
     }
 
     &__link {
@@ -254,9 +128,7 @@
       text-transform: uppercase;
 
       &:hover {
-        color: color.$text-color-primary;
         transform: scale(1.1);
-        text-decoration: underline solid 0.1em color.$text-color-primary;
       }
 
       &:after {
