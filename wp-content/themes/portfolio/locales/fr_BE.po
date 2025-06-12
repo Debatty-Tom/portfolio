@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-06-12 12:26+0200\n"
+"PO-Revision-Date: 2025-06-12 12:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __hepl\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: header.php\n"
+"X-Poedit-SearchPath-2: single-project.php\n"
+"X-Poedit-SearchPath-3: template-contact.php\n"
+"X-Poedit-SearchPath-4: footer.php\n"
+"X-Poedit-SearchPath-5: template-about.php\n"
+"X-Poedit-SearchPath-6: front-page.php\n"
+"X-Poedit-SearchPath-7: index.php\n"
+"X-Poedit-SearchPath-8: parts/section-skills-svg-used.php\n"
+"X-Poedit-SearchPath-9: parts/section-explore-more.php\n"
+"X-Poedit-SearchPath-10: parts/section-key-points.php\n"
+
+#: header.php:16
+msgid "Navigation principale"
+msgstr "Navigation principale"
+
+#: header.php:43
+msgid "Mes projets"
+msgstr "Mes projets"
+
+#: includes/helpers.php:61
+msgid "projets"
+msgstr "projets"
+
+#: includes/helpers.php:78
+msgid "bénévole"
+msgstr "bénévole"
+
+#: includes/helpers.php:80
+msgid "financier"
+msgstr "financier"
+
+#: includes/helpers.php:82
+msgid "matériel"
+msgstr "matériel"
+
+#: index.php:14
+msgid "La page est vide."
+msgstr "La page est vide."
+
+#: parts/section-skills-svg-used.php:2
+msgid "Mes compétences"
+msgstr "Mes compétences"
+
+#: single-project.php:11
+msgid "Ce projet n’existe pas"
+msgstr "Ce projet n’existe pas"
+
+#: single-project.php:14
+msgid "Autres projets qui pourraient vous intéresser..."
+msgstr "Autres projets qui pourraient vous intéresser…"
+
+#: single-project.php:27
+msgid "Voir le projet"
+msgstr "Voir le projet"
+
+#: template-about.php:15
+msgid "La page est vide"
+msgstr "La page est vide"
+
+#: template-contact.php:5
+msgid "Formulaire de contact"
+msgstr "Formulaire de contact"
+
+#: template-contact.php:7
+msgid "Mes informations de contact"
+msgstr "Mes informations de contact"
+
+#: template-contact.php:10
+msgid "Email"
+msgstr "Email"
+
+#: template-contact.php:17 template-contact.php:60
+msgid "Téléphone"
+msgstr "Téléphone"
+
+#: template-contact.php:39
+msgid "Prénom"
+msgstr "Prénom"
+
+#: template-contact.php:46
+msgid "Nom"
+msgstr "Nom"
+
+#: template-contact.php:53
+msgid "Adresse mail"
+msgstr "Adresse mail"
+
+#: template-contact.php:67
+msgid "Message"
+msgstr "Message"
+
+#: template-contact.php:68
+msgid "J'aurais un projet à vous présenter..."
+msgstr "J’aurais un projet à vous présenter…"
+
+#: template-contact.php:80
+msgid "Envoyer"
+msgstr "Envoyer"
+
+#: templates/content/text-gallery/text-gallery.php:6
+msgid "Voir la galerie"
+msgstr "Voir la galerie"

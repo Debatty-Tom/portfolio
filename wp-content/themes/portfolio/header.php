@@ -31,25 +31,27 @@
                         </li>
                     <?php endif;
                 endforeach; ?>
-                <?php foreach (pll_the_languages(['raw' => true]) as $lang): ?>
-                    <li class="languages__item<?= $lang['current_lang'] ? ' languages__item--current' : '' ?>">
+                <?php foreach (pll_the_languages(['raw' => true, 'hide_if_no_translation' => false, 'hide_if_empty' => false]) as $lang): ?>
+                    <li class="<?= $lang['current_lang'] ? ' languages__item--current' : 'nav__item' ?>">
                         <a href="<?= $lang['url'] ?>" lang="<?= $lang['locale'] ?>"
                            hreflang="<?= $lang['locale'] ?>"
-                           class="nav__link underline"><?= $lang['locale'] ?></a>
+                           class="nav__link underline"
+                           title="<?= __hepl('Changer la langue en ') . $lang['name'] ?>"><?= $lang['slug'] ?></a>
                     </li>
                 <?php endforeach; ?>
                 <li class="nav__item nav__sublist__container">
-                    <p class="nav__sublist__title">
-                        <?php __hepl('Mes projets') ?>
+                    <p class="nav__link">
+                        <?= __hepl('Mes projets') ?>
                     </p>
-                    <ul class="nav__list">
+                    <ul class="nav__sublist">
                         <?php
                         foreach (dw_get_navigation_links('header') as $link):
                             if (str_contains($link->href, 'projets')):
                                 ?>
                                 <li class="nav__item underline">
-                                    <a href="<?= $link->href; ?>" class="nav__link"
+                                    <a href="<?= $link->href; ?>" class="nav__sublist__link"
                                        title="<?= __('lien vers le projet nommé ' . $link->label) ?>">
+                                        <?= $link->label; ?>
                                     </a>
                                 </li>
                             <?php endif;
@@ -60,7 +62,12 @@
         </nav>
     </div>
     <section class="project__container">
-        <h2 class="page__title"><?= dw_get_page_title() ?></h2>
+        <?php if (is_404()) : ?>
+            <h2 class="notfound__title page__title">404</h2>
+            <p class="notfound__text"><?= __hepl('La page que vous avez recherché n’existe pas, a été déplacée ou n’existe plus.') ?></p>
+        <?php else : ?>
+            <h2 class="page__title"><?= dw_get_page_title() ?></h2>
+        <?php endif; ?>
         <ul class="project__list">
             <?php
             $projects = new WP_Query([

@@ -2,6 +2,10 @@
 @use '../settings/font-sizes' as font-size;
 @use '../settings/breakpoints' as breakpoint;
 
+.languages__item--current{
+  display: none;
+}
+
 .nav {
   display: flex;
   align-items: start;
@@ -23,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 6rem;
+    padding: 4rem;
   }
 
   &__link {
@@ -61,6 +65,40 @@
     justify-content: space-between;
     flex-direction: row;
   }
+  &__sublist {
+    padding-left: 3rem;
+    gap: 1rem;
+    &__container {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &__title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+    &__link {
+      text-decoration: none;
+      color: color.$text-color-nav;
+      font-size: font-size.$main-text-size;
+
+      &::before {
+        background-color: color.$text-color-nav;
+      }
+
+      &:hover::before {
+        color: color.$text-color-nav-hover;
+        background-color: color.$text-color-nav-hover;
+      }
+
+      &:hover {
+        color: color.$text-color-nav-hover;
+      }
+    }
+  }
 }
 
 @include breakpoint.desktop-xl-up {
@@ -87,6 +125,10 @@
 
     &__item {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       width: 100%;
     }
 
@@ -121,6 +163,8 @@
     }
 
     &__link {
+      display: inline-block;
+      text-align: center;
       padding: 15px 20px;
       text-decoration: none;
       color: color.$text-color-primary;

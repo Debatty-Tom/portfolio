@@ -12,9 +12,15 @@
  *
  *
  */
+
 function get__option($field): mixed
 {
     return get_field($field, pll_current_language('slug'));
+}
+
+function dw_get_permalink(string $path): string
+{
+    return get_the_permalink(pll_get_post(get_page_by_path($path)->ID));
 }
 
 function hepl_trad_load_textdomain(): void

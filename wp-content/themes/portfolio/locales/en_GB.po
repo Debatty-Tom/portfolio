@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-06-12 12:33+0200\n"
+"PO-Revision-Date: 2025-06-12 12:33+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __hepl\n"
+"X-Poedit-SearchPath-0: header.php\n"
+"X-Poedit-SearchPath-1: single-project.php\n"
+"X-Poedit-SearchPath-2: template-contact.php\n"
+"X-Poedit-SearchPath-3: footer.php\n"
+"X-Poedit-SearchPath-4: template-about.php\n"
+"X-Poedit-SearchPath-5: front-page.php\n"
+"X-Poedit-SearchPath-6: functions.php\n"
+"X-Poedit-SearchPath-7: index.php\n"
+"X-Poedit-SearchPath-8: parts/section-skills-svg-used.php\n"
+"X-Poedit-SearchPath-9: parts/section-explore-more.php\n"
+"X-Poedit-SearchPath-10: parts/section-key-points.php\n"
+
+#: header.php:16
+msgid "Navigation principale"
+msgstr "Main navigation"
+
+#: header.php:43
+msgid "Mes projets"
+msgstr "My projects"
+
+#: index.php:14
+msgid "La page est vide."
+msgstr "Empty page"
+
+#: parts/section-skills-svg-used.php:2
+msgid "Mes compétences"
+msgstr "My skills"
+
+#: single-project.php:11
+msgid "Ce projet n’existe pas"
+msgstr "Project doesn’t exist"
+
+#: single-project.php:14
+msgid "Autres projets qui pourraient vous intéresser..."
+msgstr "Other projects"
+
+#: single-project.php:27
+msgid "Voir le projet"
+msgstr "Go to the project page"
+
+#: template-about.php:15
+msgid "La page est vide"
+msgstr "Empty page"
+
+#: template-contact.php:5
+msgid "Formulaire de contact"
+msgstr "Contact form"
+
+#: template-contact.php:7
+msgid "Mes informations de contact"
+msgstr "My contact data"
+
+#: template-contact.php:10
+msgid "Email"
+msgstr "Email"
+
+#: template-contact.php:17 template-contact.php:60
+msgid "Téléphone"
+msgstr "Phone"
+
+#: template-contact.php:39
+msgid "Prénom"
+msgstr "First name"
+
+#: template-contact.php:46
+msgid "Nom"
+msgstr "Last name"
+
+#: template-contact.php:53
+msgid "Adresse mail"
+msgstr "Email"
+
+#: template-contact.php:67
+msgid "Message"
+msgstr "Content"
+
+#: template-contact.php:68
+msgid "J'aurais un projet à vous présenter..."
+msgstr "I would like to show you my project…"
+
+#: template-contact.php:80
+msgid "Envoyer"
+msgstr "Send"
