@@ -3,10 +3,6 @@
 
 <div class="text-media__position text-media__position--<?= $media_position ?>">
     <?php if (!empty($image)): ?>
-        <img class="text-media__image"
-             src="<?= $image['url'] ?>"
-             alt="<?= $image['alt'] ?>"
-             width="<?= $image['width'] ?>"
-             height="<?= $image['height'] ?>">
+        <?= wp_get_attachment_image($image['ID'], 'text-image', false, array('class' => 'text-media__image')); ?>
     <?php endif; ?>
 </div>

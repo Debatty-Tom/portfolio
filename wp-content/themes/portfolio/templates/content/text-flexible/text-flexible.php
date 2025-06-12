@@ -1,12 +1,12 @@
 <?php $media_position = get_sub_field('flexible_position') ?>
 
-<div class="text-media__position text-media__position--<?= $media_position ?>">
+<div class="text-media__position text-media__position--<?= $media_position ?> text-media__flexible">
     <?php if (have_rows('flexible')):
         while (have_rows('flexible')): the_row();
-            if (get_row_layout() === 'flexible_cta'):
-                $cta = get_sub_field('link');
+            if (get_row_layout() === 'flexible_sub_link'):
+                $cta = get_sub_field('sub_link');
                 if (!empty($cta)): ?>
-                    <a class="text-media__content-link"
+                    <a class="text-media__flexible-link button"
                        href="<?= $cta['url'] ?>"
                        target="<?= $cta['target'] ?>"
                        title="<?= $cta['title'] ?>">
@@ -44,11 +44,7 @@
             <?php elseif (get_row_layout() === 'flexible_image'):
                 $image = get_sub_field('image');
                 if (!empty($image)): ?>
-                    <img class="text-media__image"
-                         src="<?= $image['url'] ?>"
-                         alt="<?= $image['alt'] ?>"
-                         width="<?= $image['width'] ?>"
-                         height="<?= $image['height'] ?>">
+                    <?= wp_get_attachment_image($image['ID'], 'text-image', false, array('class' => 'text-media__image')); ?>
                 <?php endif; ?>
             <?php elseif (get_row_layout() === 'flexible_file'):
                 $file = get_sub_field('file') ?>
