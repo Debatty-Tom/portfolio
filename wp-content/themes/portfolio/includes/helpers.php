@@ -4,6 +4,7 @@
 
 // Sans recadrage :
 add_image_size('naviguation', 420, 420);
+add_image_size('text-image', 650, 650);
 
 // 1. Charger un fichier "public" (asset/image/css/script/...) pour le front-end sans que cela ne s'applique à l'admin.
 function dw_asset(string $file): string
