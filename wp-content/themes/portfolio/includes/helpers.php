@@ -85,7 +85,7 @@ function dw_get_section_id(string $headline): string
         return '';
     }
 }
-function dwGenerateUniqueGridPositions($count, $maxCols = 30, $maxRows = 15)
+function dwGenerateUniqueGridPositions($count, $maxCols = 15, $maxRows = 10)
 {
     $used = [];
     $positions = [];
