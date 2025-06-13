@@ -14,6 +14,22 @@ header {
   flex: 1;
   min-height: 97.5vh;
 }
+.cta{
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: color.$text-color-primary;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    color: color.$text-color-primary;
+    background-color: color.$text-color-secondary;
+  }
+}
 
 .section__title {
   font-size: font-size.$main-text-title-size;
@@ -45,7 +61,8 @@ header {
 
 @include breakpoints.tablet-up {
   .section__title {
-    font-weight: normal;
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: font-size.$section-title-size;
   }
 }

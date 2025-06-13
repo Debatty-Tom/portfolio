@@ -2,17 +2,24 @@
 @use '../settings/colors' as color;
 @use '../settings/font-sizes' as font-size;
 
+.skills-wall-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .skills-wall {
   display: grid;
-  grid-template-columns: repeat(30, minmax(30px, 1fr));
-  grid-template-rows: repeat(15, minmax(30px, 1fr));
+  grid-template-columns: repeat(15, minmax(20px, 1fr));
+  grid-template-rows: repeat(10, 1fr);
   gap: 4px;
-  justify-content: center;
-  padding: 2rem;
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0 2rem;
+  flex: 1;
+  max-height: 60vh;
   width: 100%;
 }
+
 @for $x from 1 through 30 {
   @for $y from 1 through 15 {
     .pos-#{$x}-#{$y} {
@@ -34,6 +41,7 @@
 .skills-wall__item:hover {
   transform: scale(1.1) rotate(5deg);
 }
+
 
 .svg-container {
   width: 100%;
@@ -64,18 +72,19 @@
     font-size: font-size.$main-text-title-size;
     margin-bottom: 1rem;
   }
-    &__content {
-        font-size: font-size.$small-text-size;
-    }
+
+  &__content {
+    font-size: font-size.$small-text-size;
+  }
 }
 
-@include breakpoint.tablet{
-  .key-points__container{
+@include breakpoint.tablet {
+  .key-points__container {
     flex-wrap: wrap;
   }
-    .key-point {
-        width: 80%;
-    }
+  .key-point {
+    width: 80%;
+  }
 }
 
 @include breakpoint.tablet-up {
@@ -83,11 +92,12 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .key-point{
+  .key-point {
     width: 45%;
     text-align: start;
+    line-height: 1.6;
 
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       width: 60%;
     }
 
@@ -96,14 +106,21 @@
     }
   }
 }
+
 @include breakpoint.desktop-up {
-  .key-points__container{
+  .skills-wall-wrapper {
+    flex-direction: row;
+  }
+  .skills-wall {
+    width: 50%;
+  }
+  .key-points__container {
     flex-wrap: nowrap;
   }
   .key-point {
     width: 100%;
 
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       width: 100%;
     }
   }

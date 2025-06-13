@@ -49,7 +49,7 @@
                     if (get_row_layout() === 'flexible_cta'):
                         $cta = get_sub_field('link');
                         if (!empty($cta)): ?>
-                            <a class="text-media__content-link button"
+                            <a class="cta"
                                href="<?= $cta['url'] ?>"
                                target="<?= $cta['target'] ?>"
                                title="<?= $cta['title'] ?>">

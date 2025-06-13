@@ -7,7 +7,7 @@
             if (get_row_layout() === 'flexible_sub_link'):
                 $cta = get_sub_field('sub_link');
                 if (!empty($cta)): ?>
-                    <a class="text-media__flexible-link button"
+                    <a class="cta"
                        href="<?= $cta['url'] ?>"
                        target="<?= $cta['target'] ?>"
                        title="<?= $cta['title'] ?>">
