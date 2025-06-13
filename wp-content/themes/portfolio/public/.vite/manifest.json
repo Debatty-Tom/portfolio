@@ -1,4 +1,108 @@
 {
+  "wp-content/themes/portfolio/resources/fonts/Lora-Bold.ttf": {
+    "file": "assets/Lora-Bold-B_ZP4FU_.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-Bold.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Lora-BoldItalic.ttf": {
+    "file": "assets/Lora-BoldItalic-D-J31DGf.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-BoldItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Lora-Italic.ttf": {
+    "file": "assets/Lora-Italic-t4YC0DCW.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-Italic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Lora-Medium.ttf": {
+    "file": "assets/Lora-Medium-nfmIWVIB.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-Medium.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Lora-MediumItalic.ttf": {
+    "file": "assets/Lora-MediumItalic-D19fy88J.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-MediumItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Lora-Regular.ttf": {
+    "file": "assets/Lora-Regular-BFWPgoKa.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-Regular.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Lora-SemiBold.ttf": {
+    "file": "assets/Lora-SemiBold-wPouLiki.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-SemiBold.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Lora-SemiBoldItalic.ttf": {
+    "file": "assets/Lora-SemiBoldItalic-Dd4V7LcR.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Lora-SemiBoldItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-Black.ttf": {
+    "file": "assets/Urbanist-Black-DD4zbin7.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-Black.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-BlackItalic.ttf": {
+    "file": "assets/Urbanist-BlackItalic-BMQfMwVj.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-BlackItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-Bold.ttf": {
+    "file": "assets/Urbanist-Bold-_m6Tq3Qd.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-Bold.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-BoldItalic.ttf": {
+    "file": "assets/Urbanist-BoldItalic-BxCs423y.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-BoldItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraBold.ttf": {
+    "file": "assets/Urbanist-ExtraBold-Dci-TSHK.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraBold.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraBoldItalic.ttf": {
+    "file": "assets/Urbanist-ExtraBoldItalic-k2atfbWT.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraBoldItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraLight.ttf": {
+    "file": "assets/Urbanist-ExtraLight-BODApa_Y.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraLight.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraLightItalic.ttf": {
+    "file": "assets/Urbanist-ExtraLightItalic-lcEdqSfk.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-ExtraLightItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-Italic.ttf": {
+    "file": "assets/Urbanist-Italic-Cz1KBI75.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-Italic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-Light.ttf": {
+    "file": "assets/Urbanist-Light-fgRmDbqw.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-Light.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-LightItalic.ttf": {
+    "file": "assets/Urbanist-LightItalic-DgO1-HJy.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-LightItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-Medium.ttf": {
+    "file": "assets/Urbanist-Medium-IkjGfmrq.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-Medium.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-MediumItalic.ttf": {
+    "file": "assets/Urbanist-MediumItalic-Dyg87ONi.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-MediumItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-Regular.ttf": {
+    "file": "assets/Urbanist-Regular-BFGlRth7.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-Regular.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-SemiBold.ttf": {
+    "file": "assets/Urbanist-SemiBold-pOjqLDOP.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-SemiBold.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-SemiBoldItalic.ttf": {
+    "file": "assets/Urbanist-SemiBoldItalic-MrG0zYN8.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-SemiBoldItalic.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-Thin.ttf": {
+    "file": "assets/Urbanist-Thin-DFjiQ_eW.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-Thin.ttf"
+  },
+  "wp-content/themes/portfolio/resources/fonts/Urbanist-ThinItalic.ttf": {
+    "file": "assets/Urbanist-ThinItalic-B2nu7SD0.ttf",
+    "src": "wp-content/themes/portfolio/resources/fonts/Urbanist-ThinItalic.ttf"
+  },
   "wp-content/themes/portfolio/resources/img/blobs/blob1.svg": {
     "file": "assets/blob1-CUp2e52F.svg",
     "src": "wp-content/themes/portfolio/resources/img/blobs/blob1.svg"
@@ -19,14 +123,22 @@
     "file": "assets/blob5-BdIzUuaM.svg",
     "src": "wp-content/themes/portfolio/resources/img/blobs/blob5.svg"
   },
+  "wp-content/themes/portfolio/resources/img/rating/empty_star.svg": {
+    "file": "assets/empty_star-Dpv59eRL.svg",
+    "src": "wp-content/themes/portfolio/resources/img/rating/empty_star.svg"
+  },
+  "wp-content/themes/portfolio/resources/img/rating/full_star.svg": {
+    "file": "assets/full_star-Bh2UkX0d.svg",
+    "src": "wp-content/themes/portfolio/resources/img/rating/full_star.svg"
+  },
   "wp-content/themes/portfolio/resources/js/main.js": {
-    "file": "assets/js-l0sNRNKZ.js",
+    "file": "assets/js-JCq5_wKM.js",
     "name": "js",
     "src": "wp-content/themes/portfolio/resources/js/main.js",
     "isEntry": true
   },
   "wp-content/themes/portfolio/resources/scss/main.scss": {
-    "file": "assets/css-DKqpHf7V.css",
+    "file": "assets/css-DG45QSb7.css",
     "src": "wp-content/themes/portfolio/resources/scss/main.scss",
     "isEntry": true
   }
