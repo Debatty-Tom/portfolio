@@ -20,19 +20,23 @@ else: ?>
                 'posts_per_page' => 2,
                 'post__not_in' => [get_the_ID()],
             ]);
-
-            if ($project->have_posts()): while ($project->have_posts()): $project->the_post(); ?>
-                <article class="project">
-                    <a href="<?= get_the_permalink(); ?>" class="project__link"><span
-                                class="sro"><?php __hepl('Voir le projet') ?> "<?= get_the_title(); ?>"</span></a>
-                    <div class="project__card">
-                        <h3 class="project__title"><?= get_the_title(); ?></h3>
-                        <figure class="project__related__figure">
-                            <?= get_the_post_thumbnail(size: 'related', attr: ['class' => 'recipe__img']); ?>
+            $index = 0;
+            if ($project->have_posts()): while ($project->have_posts()): $project->the_post();
+                $side = ($index % 2 === 0) ? 'left' : 'right';
+                ?>
+                <article class="related__project related__project--<?= $side ?>">
+                    <a href="<?= get_the_permalink(); ?>" class="related__project__link">
+                        <span class="sro"><?php __hepl('Voir le projet') ?> "<?= get_the_title(); ?>"</span>
+                    </a>
+                    <div class="related__project__card">
+                        <h3 class="related__project__title"><?= get_the_title(); ?></h3>
+                        <figure class="related__project__figure">
+                            <?= get_the_post_thumbnail(size: 'related'); ?>
                         </figure>
                     </div>
                 </article>
-            <?php endwhile; endif; ?>
+                <?php $index++; endwhile; endif; ?>
+
         </div>
     </section>
 <?php get_footer(); ?>

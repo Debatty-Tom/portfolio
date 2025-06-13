@@ -32,7 +32,7 @@
             <?php if (isset($links) && $links !== []): ?>
             <div class="explore__links">
                 <?php foreach ($links as $link): ?>
-                    <a href="<?= esc_url($link) ?>" class="explore__link">
+                    <a href="<?= esc_url($link) ?>" class="cta">
                         <?= dw_url_to_page_title($link) ?>
                     </a>
                 <?php endforeach; ?>
