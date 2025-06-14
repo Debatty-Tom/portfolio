@@ -2,7 +2,6 @@
 <?php $headline = get_sub_field('headline') ?>
 <?php $subline = get_sub_field('subline') ?>
 <?php $text = get_sub_field('text') ?>
-<?php $section_id = dw_get_section_id($headline) ?>
 
 <?php if (!empty($media_type) && $media_type === 'text-gallery'){
     $media_position = get_sub_field('gallery_position');
@@ -15,10 +14,7 @@
 }
 ?>
 
-<section class="text-media <?php if ($media_position === 'center'): echo 'text-media__center'; endif; ?>"
-    <?php if (!empty($section_id)): ?>
-        id="<?= esc_attr($section_id) ?>"
-    <?php endif; ?>>
+<section class="text-media <?php if ($media_position === 'center'): echo 'text-media__center'; endif; ?>" data-animation="show-up">
     <?php if (!isset($headline) || $headline === ''): ?>
         <h2 class="sro"><?= get_the_title() ?></h2>
     <?php endif; ?>

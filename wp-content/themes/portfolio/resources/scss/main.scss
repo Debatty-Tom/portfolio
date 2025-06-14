@@ -2,6 +2,7 @@
 @use 'utils/helper';
 @use 'utils/burger';
 @use 'utils/normalize';
+@use 'utils/js-classes';
 
 @use 'settings/breakpoints';
 @use 'settings/colors';
@@ -23,3 +24,4 @@
 @use 'content/rating';
 
 @use 'partials/text-media';
+@use 'partials/gallery';

@@ -1,4 +1,4 @@
-<section class="skills-wall-section">
+<section class="skills-wall-section" data-animation="show-up">
     <h2 class="section__title"><?= __hepl('Mes compétences') ?></h2>
     <?php if (have_rows('logos_repeater')): ?>
         <?php

@@ -1,7 +1,7 @@
 <?php /* Template Name: Page "Contact" */ ?>
 
 <?php get_header(); ?>
-    <section class="contact">
+    <section class="contact" data-animation="show-up">
         <h2 class="sro"><?= __hepl('Formulaire de contact') ?></h2>
         <article class="cordcontact">
             <h2 class="cordcontact__title section__title"><?= __hepl('Mes informations de contact')?></h2>

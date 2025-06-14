@@ -10,7 +10,7 @@ endwhile;
 else: ?>
     <p><?= __hepl('Ce projet n’existe pas') ?>.</p>
 <?php endif; ?>
-    <section class="related">
+    <section class="related" data-animation="show-up">
         <h2 class="section__title"><?= __hepl('Autres projets qui pourraient vous intéresser...') ?></h2>
         <div class="related__container">
             <?php
@@ -31,7 +31,7 @@ else: ?>
                     <div class="related__project__card">
                         <h3 class="related__project__title"><?= get_the_title(); ?></h3>
                         <figure class="related__project__figure">
-                            <?= get_the_post_thumbnail(size: 'related'); ?>
+                            <?= get_the_post_thumbnail(size: 'related', attr: ['class' => 'related__project__figure__img']); ?>
                         </figure>
                     </div>
                 </article>

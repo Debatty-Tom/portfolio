@@ -1,10 +1,10 @@
-<section class="key-points">
+<section class="key-points" data-animation="show-up">
     <?php
     $group = get_field('key_points');
 
     if ($group && !empty($group)):
         if (isset($group['label']) && $group['label'] !== ''): ?>
-            <h2 class="section__title"><?= esc_html($group['label']) ?></h2>
+            <h2 class="section__title" data-animation="show-up"><?= esc_html($group['label']) ?></h2>
         <?php
         endif;
         if (is_array($group['key_point']) && !empty($group['key_point'])):
@@ -13,7 +13,7 @@
                 <?php
                 foreach ($group['key_point'] as $key_point):
                     ?>
-                    <div class="key-point">
+                    <div class="key-point" data-animation="show-up">
                         <?php if (isset($key_point['label']) && $key_point['label']): ?>
                             <p class="key-point__label">
                                 <?= esc_html($key_point['label']) ?>
