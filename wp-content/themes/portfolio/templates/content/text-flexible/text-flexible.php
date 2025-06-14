@@ -79,11 +79,6 @@
                                     </desc>
                                     <figure class="logo__figure">
                                         <?php echo $svg_content; ?>
-                                        <figcaption class="skills__rating"
-                                                    data-score="<?= $rating = get_sub_field('rating'); ?>">
-                                            <p class="sro">Cette compétence est maitrisée à <?= $rating; ?> étoiles sur
-                                                5</p>
-                                        </figcaption>
                                     </figure>
                                 </div>
                             </li>
