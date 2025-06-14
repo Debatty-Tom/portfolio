@@ -11,6 +11,8 @@ Conçu avec une esthétique **brutaliste** assumée et une **palette beige-orang
 - **Inspiration** : L’escalade — chaque projet est une prise à saisir, chaque page est une nouvelle voie à découvrir.
 - **Palette de couleurs** : Beige, orange brûlé, blanc cassé, contrastes francs pour une lisibilité directe.
 
+- Voici un lien vers ma [maquette](https://www.figma.com/design/O1IlVQl35cPeZ9EZnRhvmF/portfolio?node-id=83-618&t=IkX0INvMQgVHs66l-1)
+
 ---
 
 ## 🧭 Navigation
@@ -39,4 +41,4 @@ Le site est disponible en **Français 🇫🇷** et **Anglais 🇬🇧** :
 - **Sass (SCSS)** : Architecture modulaire (`settings/`, `components/`, `layouts/`)
 - **JavaScript Vanilla** : IntersectionObserver pour les animations d’apparition
 - **HTML5 sémantique** : Balises propres et accessibles
-- **Responsive design** 
+- **Responsive design**
