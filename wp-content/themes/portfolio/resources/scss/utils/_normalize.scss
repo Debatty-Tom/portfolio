@@ -4,9 +4,14 @@ html, html * {
   box-sizing: border-box;
 }
 
-section, .header, .footer {
+.header, .footer {
   width: 100%;
   padding: 0 24px;
+}
+
+section{
+    width: 100%;
+    padding: 2.5em 24px;
 }
 
 a {

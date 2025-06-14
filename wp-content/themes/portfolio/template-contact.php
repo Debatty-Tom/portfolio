@@ -37,7 +37,7 @@
                     <fieldset class="form__fields">
                         <div class="field__container">
                             <label for="firstname" class="field__label"><?= __hepl('Prénom')?></label>
-                            <input type="text" name="firstname" id="firstname" required class="field__input" value="<?= $_SESSION['old']['firstname'] ?? '' ?>" placeholder="Jhon">
+                            <input type="text" name="firstname" id="firstname" required class="field__input" value="<?= $_SESSION['old']['firstname'] ?? '' ?>" placeholder="John">
                             <?php if (isset($errors['firstname'])): ?>
                                 <p class=" field__error"><?= $errors['firstname']; ?></p>
                             <?php endif; ?>
