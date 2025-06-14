@@ -17,6 +17,7 @@ require_once(get_template_directory() . '/includes/helpers.php');
 require_once(get_template_directory() . '/includes/navigation.php');
 require_once(get_template_directory() . '/includes/handle-forms.php');
 require_once(get_template_directory() . '/includes/multilang.php');
+require_once(get_template_directory() . '/includes/remove-menu.php');
 
 
 
