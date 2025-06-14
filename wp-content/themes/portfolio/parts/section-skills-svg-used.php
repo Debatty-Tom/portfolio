@@ -36,12 +36,12 @@
                         }
                         ?>
                         <li class="skills-wall__item <?= $positions[$index++] ?>">
-                            <div class="svg-container" title="<?= 'Il s’agit du logo de ' . esc_attr($svg_label) ?>">
+                            <div class="svg-container" title="<?= __hepl('Il s’agit du logo de ') . esc_attr($svg_label) ?>">
                                 <desc class="sro"><?= esc_html($description); ?></desc>
                                 <figure class="logo__figure">
                                     <?= $svg_content; ?>
                                     <figcaption class="skills__rating" data-score="<?= esc_attr($rating); ?>">
-                                        <p class="sro">Cette compétence est maitrisée à <?= esc_html($rating); ?> étoiles sur 5</p>
+                                        <p class="sro"><?= __hepl('Cette compétence est maitrisée à') ?> <?= esc_html($rating); ?> <?= __hepl('étoiles sur 5') ?></p>
                                     </figcaption>
                                 </figure>
                             </div>

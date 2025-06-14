@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-06-12 12:26+0200\n"
-"PO-Revision-Date: 2025-06-12 12:28+0200\n"
+"POT-Creation-Date: 2025-06-14 09:39+0200\n"
+"PO-Revision-Date: 2025-06-14 09:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -24,29 +24,53 @@ msgstr ""
 "X-Poedit-SearchPath-9: parts/section-explore-more.php\n"
 "X-Poedit-SearchPath-10: parts/section-key-points.php\n"
 
+#: footer.php:6
+msgid "Tous droits réservés"
+msgstr "Tous droits réservés"
+
+#: footer.php:7 template-privacy.php:6
+msgid "Mentions légales"
+msgstr "Mentions légales"
+
 #: header.php:16
 msgid "Navigation principale"
 msgstr "Navigation principale"
 
-#: header.php:43
+#: header.php:39
+msgid "Changer la langue en "
+msgstr "Changer la langue en "
+
+#: header.php:44
 msgid "Mes projets"
 msgstr "Mes projets"
 
-#: includes/helpers.php:61
+#: header.php:67
+msgid ""
+"La page que vous avez recherché n’existe pas, a été déplacée ou n’existe "
+"plus."
+msgstr ""
+"La page que vous avez recherché n’existe pas, a été déplacée ou n’existe "
+"plus."
+
+#: header.php:88
+msgid "Lien vers le projet nommé "
+msgstr "Lien vers le projet nommé "
+
+#: includes/helpers.php:42
+msgid "Développeur full stack"
+msgstr "Développeur full stack"
+
+#: includes/helpers.php:52
 msgid "projets"
 msgstr "projets"
 
-#: includes/helpers.php:78
-msgid "bénévole"
-msgstr "bénévole"
+#: includes/helpers.php:62
+msgid "Il n’y pas de page pour ce lien"
+msgstr "Il n’y pas de page pour ce lien"
 
-#: includes/helpers.php:80
-msgid "financier"
-msgstr "financier"
-
-#: includes/helpers.php:82
-msgid "matériel"
-msgstr "matériel"
+#: includes/helpers.php:65
+msgid "Il n’y pas de lien"
+msgstr "Il n’y pas de lien"
 
 #: index.php:14
 msgid "La page est vide."
@@ -56,6 +80,18 @@ msgstr "La page est vide."
 msgid "Mes compétences"
 msgstr "Mes compétences"
 
+#: parts/section-skills-svg-used.php:39
+msgid "Il s’agit du logo de "
+msgstr "Il s’agit du logo de "
+
+#: parts/section-skills-svg-used.php:44
+msgid "Cette compétence est maitrisée à"
+msgstr "Cette compétence est maitrisée à"
+
+#: parts/section-skills-svg-used.php:44
+msgid "étoiles sur 5"
+msgstr "étoiles sur 5"
+
 #: single-project.php:11
 msgid "Ce projet n’existe pas"
 msgstr "Ce projet n’existe pas"
@@ -64,7 +100,7 @@ msgstr "Ce projet n’existe pas"
 msgid "Autres projets qui pourraient vous intéresser..."
 msgstr "Autres projets qui pourraient vous intéresser…"
 
-#: single-project.php:27
+#: single-project.php:29
 msgid "Voir le projet"
 msgstr "Voir le projet"
 
@@ -112,6 +148,19 @@ msgstr "J’aurais un projet à vous présenter…"
 msgid "Envoyer"
 msgstr "Envoyer"
 
+#: template-privacy.php:7
+msgid "Dernière mise à jour"
+msgstr "Dernière mise à jour"
+
 #: templates/content/text-gallery/text-gallery.php:6
 msgid "Voir la galerie"
 msgstr "Voir la galerie"
+
+#~ msgid "bénévole"
+#~ msgstr "bénévole"
+
+#~ msgid "financier"
+#~ msgstr "financier"
+
+#~ msgid "matériel"
+#~ msgstr "matériel"

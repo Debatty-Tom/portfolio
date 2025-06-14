@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-06-12 12:33+0200\n"
-"PO-Revision-Date: 2025-06-12 12:33+0200\n"
+"POT-Creation-Date: 2025-06-14 09:39+0200\n"
+"PO-Revision-Date: 2025-06-14 09:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_GB\n"
@@ -11,50 +11,114 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __hepl\n"
-"X-Poedit-SearchPath-0: header.php\n"
-"X-Poedit-SearchPath-1: single-project.php\n"
-"X-Poedit-SearchPath-2: template-contact.php\n"
-"X-Poedit-SearchPath-3: footer.php\n"
-"X-Poedit-SearchPath-4: template-about.php\n"
-"X-Poedit-SearchPath-5: front-page.php\n"
-"X-Poedit-SearchPath-6: functions.php\n"
-"X-Poedit-SearchPath-7: index.php\n"
-"X-Poedit-SearchPath-8: parts/section-skills-svg-used.php\n"
-"X-Poedit-SearchPath-9: parts/section-explore-more.php\n"
-"X-Poedit-SearchPath-10: parts/section-key-points.php\n"
+"X-Poedit-KeywordsList: __hepl;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: header.php\n"
+"X-Poedit-SearchPath-2: functions.php\n"
+"X-Poedit-SearchPath-3: single-project.php\n"
+"X-Poedit-SearchPath-4: template-contact.php\n"
+"X-Poedit-SearchPath-5: 404.php\n"
+"X-Poedit-SearchPath-6: footer.php\n"
+"X-Poedit-SearchPath-7: template-about.php\n"
+"X-Poedit-SearchPath-8: template-privacy.php\n"
+"X-Poedit-SearchPath-9: front-page.php\n"
+"X-Poedit-SearchPath-10: index.php\n"
+"X-Poedit-SearchPath-11: parts/section-skills-svg-used.php\n"
+"X-Poedit-SearchPath-12: parts/section-explore-more.php\n"
+"X-Poedit-SearchPath-13: parts/section-key-points.php\n"
+
+#: footer.php:6
+msgid "Tous droits réservés"
+msgstr "All rights reserved"
+
+#: footer.php:7 template-privacy.php:6
+msgid "Mentions légales"
+msgstr "Terms and condition"
 
 #: header.php:16
 msgid "Navigation principale"
-msgstr "Main navigation"
+msgstr "Primary navigation"
 
-#: header.php:43
+#: header.php:39
+msgid "Changer la langue en "
+msgstr "Switch language to "
+
+#: header.php:44
 msgid "Mes projets"
 msgstr "My projects"
 
+#: header.php:53
+msgid "lien vers le projet nommé "
+msgstr "link to the named project"
+
+#: header.php:67
+msgid ""
+"La page que vous avez recherché n’existe pas, a été déplacée ou n’existe "
+"plus."
+msgstr ""
+"The page you are looking for does not exist, has been moved or no longer "
+"exists."
+
+#: header.php:88
+msgid "Lien vers le projet nommé "
+msgstr "Link to the named project"
+
+#: includes/acf-site-option.php:17 includes/acf-site-option.php:18
+#, php-format
+msgid "Options du site %s"
+msgstr "Site options %s"
+
+#: includes/helpers.php:42
+msgid "Développeur full stack"
+msgstr "Full stack developer"
+
+#: includes/helpers.php:52
+msgid "projets"
+msgstr "projects"
+
+#: includes/helpers.php:62
+msgid "Il n’y pas de page pour ce lien"
+msgstr "There is no page for this link"
+
+#: includes/helpers.php:65
+msgid "Il n’y pas de lien"
+msgstr "There is no link"
+
 #: index.php:14
 msgid "La page est vide."
-msgstr "Empty page"
+msgstr "The page is empty"
 
 #: parts/section-skills-svg-used.php:2
 msgid "Mes compétences"
 msgstr "My skills"
 
+#: parts/section-skills-svg-used.php:39
+msgid "Il s’agit du logo de "
+msgstr "This is the logo of "
+
+#: parts/section-skills-svg-used.php:44
+msgid "Cette compétence est maitrisée à"
+msgstr "This skill is mastered at"
+
+#: parts/section-skills-svg-used.php:44
+msgid "étoiles sur 5"
+msgstr "stars out of 5"
+
 #: single-project.php:11
 msgid "Ce projet n’existe pas"
-msgstr "Project doesn’t exist"
+msgstr "This project doesn’t exist"
 
 #: single-project.php:14
 msgid "Autres projets qui pourraient vous intéresser..."
-msgstr "Other projects"
+msgstr "Other projects that might interest you…"
 
-#: single-project.php:27
+#: single-project.php:29
 msgid "Voir le projet"
-msgstr "Go to the project page"
+msgstr "See the project"
 
 #: template-about.php:15
 msgid "La page est vide"
-msgstr "Empty page"
+msgstr "The page is empty"
 
 #: template-contact.php:5
 msgid "Formulaire de contact"
@@ -82,7 +146,7 @@ msgstr "Last name"
 
 #: template-contact.php:53
 msgid "Adresse mail"
-msgstr "Email"
+msgstr "Email address"
 
 #: template-contact.php:67
 msgid "Message"
@@ -90,8 +154,16 @@ msgstr "Content"
 
 #: template-contact.php:68
 msgid "J'aurais un projet à vous présenter..."
-msgstr "I would like to show you my project…"
+msgstr "I have a project to present to you…"
 
 #: template-contact.php:80
 msgid "Envoyer"
 msgstr "Send"
+
+#: template-privacy.php:7
+msgid "Dernière mise à jour"
+msgstr "Last update"
+
+#: templates/content/text-gallery/text-gallery.php:6
+msgid "Voir la galerie"
+msgstr "See all the images"
