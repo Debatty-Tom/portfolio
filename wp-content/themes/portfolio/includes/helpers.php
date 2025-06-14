@@ -2,8 +2,8 @@
 
 
 add_image_size('naviguation', 420, 420);
-add_image_size('text-image', 650, 650);
-add_image_size('related', 650, 650);
+add_image_size('text-image', 650, 650, true);
+add_image_size('related', 650, 500, true);
 
 function dw_asset(string $file): string
 {
