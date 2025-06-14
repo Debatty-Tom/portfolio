@@ -36,7 +36,8 @@
                         <a href="<?= $lang['url'] ?>" lang="<?= $lang['locale'] ?>"
                            hreflang="<?= $lang['locale'] ?>"
                            class="nav__link underline"
-                           title="<?= __hepl('Changer la langue en ') . $lang['name'] ?>"><?= $lang['slug'] ?></a>
+                           title="<?= __hepl('Changer la langue en ') . $lang['name'] ?>">
+                            <img src="<?= $lang['flag'] ?>" width="60" height="42" alt="<?= __hepl('Drapeau') . ' ' . $lang['name'] ?>"></a>
                     </li>
                 <?php endforeach; ?>
                 <li class="nav__item nav__sublist__container">
@@ -85,7 +86,7 @@
                     ?>
                     <li class="project__item project__item--<?= $projectIndex ?>">
                         <a href="<?= esc_url($permalink) ?>" class="project__link"
-                           title="<?= esc_attr(__('Lien vers le projet nommé ' . $title)) ?>">
+                           title="<?= esc_attr(__hepl('Lien vers le projet nommé ' . $title)) ?>">
                             <figure class="project__figure">
                                 <?= get_the_post_thumbnail(get_the_ID(), 'naviguation', ['class' => 'project__figure__img']) ?>
                                 <figcaption class="project__label"><?= esc_html($title) ?></figcaption>
