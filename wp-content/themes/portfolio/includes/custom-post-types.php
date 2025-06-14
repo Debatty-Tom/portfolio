@@ -19,21 +19,6 @@ function create_projects()
 }
 add_action('init', 'create_projects');
 
-function create_language_taxonomy()
-{
-    register_taxonomy('language', ['project'], [
-        'labels' => [
-            'name' => 'Langage de programmation',
-            'singular_name' => 'Langage'
-        ],
-        'description' => 'Quel sont les langage de programmation utilisé pour ce projet ?',
-        'public' => true,
-        'hierarchical' => true,
-        'show_tagcloud' => false,
-    ]);
-}
-add_action('init', 'create_language_taxonomy');
-
 function create_contact_form()
 {
     register_post_type('contact_message', [
